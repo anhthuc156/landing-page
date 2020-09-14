@@ -19,7 +19,7 @@ const Sidebar = () => {
                             behavior: 'smooth'
                         }
                     )
-                    
+                    setActiveTab(1)
                 break;
 
                 case 40://arrowdown
