@@ -1,0 +1,39 @@
+.logo {
+    position: static;
+    display: block;
+    width: 125px;
+    margin-top: 0px;
+    padding-top: 0px;
+    float: none;
+}
+
+.w-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333333;
+}
+
+a {
+    background-color: transparent;
+}
+
+.image {
+    position: fixed;
+    left: 2%;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+    width: 6%;
+    max-width: 25%;
+    margin-top: 1.2%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0px;
+    float: none;
+    clear: none;
+}
+
+img {
+    border: 0;
+}

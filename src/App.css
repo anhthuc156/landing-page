@@ -1,38 +1,136 @@
-.App {
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-picture, .hero .hero-regions {
+  transform: none !important;
+}
+
+section[id=model3] .hero:not(.hero-with-banner) img.hero-asset {
+  background-position-x: center!important;
+  background-position-y: 35%!important;
+  object-position: center 35%;
+}
+
+.hero img.hero-asset, .hero video.hero-asset {
+  display: block;
+  height: 100vh;
+  height: var(--media-height);
+  max-height: 100vh;
+  max-height: var(--media-height);
+  max-width: none;
+  min-height: 100vh;
+  min-height: var(--media-height);
+  font-family: "object-fit:cover";
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-regions-wrapper {
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: stretch;
+  left: 0;
+  position: absolute;
+  padding-bottom: 0;
+  top: 0;
+  width: 100%;
+}
+
+.hero .hero-regions, .hero .hero-regions .hero-region-center {
+  display: flex;
+  align-content: stretch;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-direction: normal;
+  height: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.hero .hero-regions {
+  -webkit-box-orient: horizontal;
+  flex-flow: row nowrap;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.hero:not(.hero-with-banner) .hero-regions .hero-region-center {
+  padding-top: 3vh;
+}
+
+.hero .hero-regions .hero-region-center.hero-region-with-callouts {
+  -webkit-box-flex: 1;
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+.hero .hero-regions>div[class^=hero-region-] {
+  -webkit-box-flex: 1;
+  flex: 1 0 33%;
+  width: 33%;
+}
+
+.hero .hero-regions .hero-region-center {
+  -webkit-box-orient: vertical;
+  flex-flow: column nowrap;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero .hero-regions .hero-region-center .hero-region-center-bottom,
+.hero .hero-regions .hero-region-center .hero-region-center-top {
+  min-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero .hero-regions>div[class^=hero-region-] header {
+  padding-top: 9vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero .hero-regions>div[class^=hero-region-] header .header-white,
+.hero .hero-regions .hero-copy.hero-copy-white,
+.hero .hero-regions .hero-copy.hero-copy-white *,
+.hero .hero-regions>div[class^=hero-region-] header .header-white * {
+  color: white
 }
 
-.App-link {
-  color: #61dafb;
+.tds-animate-small-to-reveal {
+  z-index: -1;
+  opacity: 0;
+  opacity: var(--tds-opacity--transparent);
+  transform: translate3d(0,30px,0);
+  transition: transform .5s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
+  transition: transform var(--tds-animate-transition-duration--short) var(--tds-animate-transition-function--mktg),opacity var(--tds-animate-transition-duration--short) var(--tds-animate-transition-function--mktg)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tds-animate-small-reveal .tds-animate-small-to-reveal {
+  z-index: auto;
+  opacity: 1;
+  /* opacity: var(--tds-opacity--100); */
+  transform: translateZ(0)
+}
+
+.hero .hero-regions>div[class^=hero-region-] header .header-upper {
+  display: block;
+  margin-top: 4px;
+  transition-delay: .33s;
+}
+
+.hero .hero-regions>div[class^=hero-region-] header .header-lower {
+  display: block;
+  margin-top: 5px;
+  transition-delay: .33s;
+}
+
+.s1 {
+  font-size: 20px;
+  line-height: 1;
 }
