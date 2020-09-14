@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/landingpage.github.io/static/css/main.a9fa0003.chunk.css",
+    "main.js": "/landingpage.github.io/static/js/main.8c334e13.chunk.js",
+    "main.js.map": "/landingpage.github.io/static/js/main.8c334e13.chunk.js.map",
+    "runtime-main.js": "/landingpage.github.io/static/js/runtime-main.0a8176e0.js",
+    "runtime-main.js.map": "/landingpage.github.io/static/js/runtime-main.0a8176e0.js.map",
+    "static/js/2.abd3cf6a.chunk.js": "/landingpage.github.io/static/js/2.abd3cf6a.chunk.js",
+    "static/js/2.abd3cf6a.chunk.js.map": "/landingpage.github.io/static/js/2.abd3cf6a.chunk.js.map",
+    "index.html": "/landingpage.github.io/index.html",
+    "precache-manifest.3efa59713bb623ac06fd93dd76b05129.js": "/landingpage.github.io/precache-manifest.3efa59713bb623ac06fd93dd76b05129.js",
+    "service-worker.js": "/landingpage.github.io/service-worker.js",
+    "static/css/main.a9fa0003.chunk.css.map": "/landingpage.github.io/static/css/main.a9fa0003.chunk.css.map",
+    "static/js/2.abd3cf6a.chunk.js.LICENSE.txt": "/landingpage.github.io/static/js/2.abd3cf6a.chunk.js.LICENSE.txt",
+    "static/media/model-3-hero-desktop-v2-1.jpg": "/landingpage.github.io/static/media/model-3-hero-desktop-v2-1.503c0269.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a8176e0.js",
+    "static/js/2.abd3cf6a.chunk.js",
+    "static/css/main.a9fa0003.chunk.css",
+    "static/js/main.8c334e13.chunk.js"
+  ]
+}
